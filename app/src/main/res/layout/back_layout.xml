@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_scarlet"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/light_scarlet">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="72dp"
+                android:layout_height="59dp"
+                android:onClick="goToProfile"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="@color/dark_scarlet"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/hellouser"
+                android:layout_width="274dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/roboto_slab"
+                android:paddingStart="10dp"
+                android:paddingTop="25dp"
+                android:text="@string/username" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/more"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="63dp"
+                android:layout_height="36dp"
+                android:onClick="drop"
+                app:icon="@android:drawable/ic_menu_more"
+                app:iconSize="40dp" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/rose_grey"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/morew"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            android:layout_width="40dp"
+                            android:layout_height="46dp"
+                            android:background="@color/lignt_text"
+                            app:icon="@drawable/ic_baseline_attach_money_24"
+                            app:iconSize="30dp"
+                            app:iconTint="@color/lignt_text"/>
+
+                        <TextView
+                            android:id="@+id/USD"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_slab"
+                            android:paddingTop="10dp"
+                            android:text="USD:\n76.37"
+                            android:textColor="@color/lignt_text" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/dark_scarlet"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/morewe"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            android:layout_width="40dp"
+                            android:layout_height="46dp"
+                            android:background="@color/lignt_text"
+                            app:icon="@drawable/ic_baseline_euro_24"
+                            app:iconSize="27dp"
+                            app:iconTint="@color/lignt_text"/>
+
+                        <TextView
+                            android:id="@+id/EUR"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_slab"
+                            android:paddingTop="10dp"
+                            android:text="EUR:\n84.04"
+                            android:textColor="@color/lignt_text" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/rose_grey"
+                        android:orientation="horizontal">
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/morewew"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            android:layout_width="40dp"
+                            android:layout_height="46dp"
+                            android:background="@color/lignt_text"
+                            app:icon="@drawable/pound"
+                            app:iconSize="27dp"
+                            app:iconTint="@color/lignt_text"/>
+
+
+                        <TextView
+                            android:id="@+id/GBP"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_slab"
+                            android:paddingTop="10dp"
+                            android:text="GBP:\n98.37"
+                            android:textColor="@color/lignt_text" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/your_pod"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_scarlet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_connected_item"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:reverseLayout="true">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/new_pod"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_scarlet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/rose_grey"
+                        android:onClick="openAcc"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/acc"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            android:layout_width="40dp"
+                            android:layout_height="46dp"
+                            android:background="@color/lignt_text"
+                            app:icon="@drawable/account"
+                            app:iconSize="30dp"
+                            app:iconTint="@color/lignt_text" />
+
+                        <TextView
+                            android:id="@+id/acc1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_slab"
+                            android:paddingTop="10dp"
+                            android:text="@string/open_acc"
+                            android:textColor="@color/lignt_text"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="openDep"
+                        android:background="@color/dark_scarlet"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/dep"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            android:layout_width="40dp"
+                            android:layout_height="46dp"
+                            android:background="@color/lignt_text"
+                            app:icon="@drawable/deposits"
+                            app:iconSize="27dp"
+                            app:iconTint="@color/lignt_text" />
+
+                        <TextView
+                            android:id="@+id/dep1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_slab"
+                            android:paddingTop="10dp"
+                            android:text="@string/depposit_open"
+                            android:textColor="@color/lignt_text"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="openCard"
+                        android:background="@color/rose_grey"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/card"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            android:layout_width="40dp"
+                            android:layout_height="46dp"
+                            android:background="@color/lignt_text"
+                            app:icon="@drawable/cards"
+                            app:iconSize="27dp"
+                            app:iconTint="@color/lignt_text" />
+
+
+                        <TextView
+                            android:id="@+id/card1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_slab"
+                            android:paddingTop="10dp"
+                            android:text="@string/open_card"
+                            android:textColor="@color/lignt_text"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_nav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

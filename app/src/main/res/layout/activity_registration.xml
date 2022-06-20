@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_scarlet"
+    android:layout_height="match_parent"
+    tools:context=".registration">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="131dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="56dp"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bank1ogo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textButton"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/rose_grey"
+        android:fontFamily="@font/roboto_slab"
+        android:onClick="goToNext"
+        android:outlineAmbientShadowColor="@color/black"
+        android:text="Продолжить"
+        android:textColor="@color/lignt_text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_slab"
+        android:onClick="goToAuth"
+        android:text="Назад"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textButton" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.bank.Regist1"
+        android:layout_width="match_parent"
+        android:layout_height="419dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

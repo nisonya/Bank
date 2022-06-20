@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_menu"
+        android:title="Главная"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+    <item
+        android:id="@+id/transaction_menu"
+        android:title="Переводы"
+        android:icon="@drawable/ic_baseline_label_important_24"
+        />
+    <item
+        android:id="@+id/history_menu"
+        android:title="История"
+        android:icon="@drawable/ic_baseline_history_24"
+        />
+    <item
+        android:id="@+id/maps_menu"
+        android:title="Карты"
+        android:icon="@drawable/ic_baseline_map_24"
+        />
+</menu>

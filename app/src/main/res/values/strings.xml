@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bank</string>
+    <string name="username">Здравствуйте, UserName!</string>
+    <string name="eur_n84_04">EUR:\n84.04</string>
+    <string name="your_pod">Ваши подключения</string>
+    <string name="depposit_open">Открыть вклад</string>
+    <string name="open_acc">Открыть счет</string>
+    <string name="new_pod">Новые подключения</string>
+    <string name="gbp_n98_37">GBP:\n98.37</string>
+    <string name="open_card">Открыть карту</string>
+    <string name="textview">TextView</string>
+</resources>
